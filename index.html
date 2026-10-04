@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Fizaan Seerat Online Quran Academy - Learn Quran, Tajweed, Noorani Qaida and Seerat online with qualified teachers. Free trial class available.">
+<title>Fizaan Seerat Online Quran Academy</title>
+<style>
+:root{--green:#075c43;--green2:#0a7655;--gold:#d5a52b;--cream:#fffaf0;--text:#18352d}
+*{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);background:#fff}
+a{text-decoration:none;color:inherit}.nav{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #e8eadf}
+.navin{max-width:1100px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:800;font-size:22px;color:var(--green)} .logo span{color:var(--gold)}
+.navlinks{display:flex;gap:20px;align-items:center;font-size:14px}.navlinks a:hover{color:var(--green2)}
+.btn{display:inline-block;padding:13px 20px;border-radius:999px;font-weight:700;border:0;cursor:pointer}
+.btn-green{background:var(--green);color:#fff}.btn-gold{background:var(--gold);color:#17372c}
+.hero{background:linear-gradient(135deg,#f4fbf6,#fff9e9);padding:65px 20px}
+.hero-in{max-width:1100px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
+.badge{display:inline-block;background:#e5f4ed;color:var(--green);padding:8px 14px;border-radius:999px;font-size:13px;font-weight:700}
+h1{font-size:48px;line-height:1.08;margin:18px 0 15px;color:var(--green)} h1 span{color:var(--gold)}
+.hero p{font-size:18px;line-height:1.7;color:#4b615a}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.hero-card{background:#fff;border-radius:24px;padding:14px;box-shadow:0 18px 50px rgba(0,70,45,.13)}
+.hero-card img{width:100%;display:block;border-radius:16px}
+section{padding:70px 20px}.wrap{max-width:1100px;margin:auto}
+.title{text-align:center;margin-bottom:40px}.title h2{font-size:34px;color:var(--green);margin:0 0 10px}.title p{color:#64756f}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid #e6ebe6;border-radius:18px;padding:25px;background:#fff;box-shadow:0 8px 25px rgba(0,0,0,.04)}
+.icon{font-size:30px}.card h3{color:var(--green);margin:12px 0 8px}.card p{line-height:1.6;color:#64756f}
+.features{background:var(--cream)}.featuregrid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.feature{text-align:center;background:#fff;border-radius:18px;padding:24px}.feature strong{display:block;margin-top:10px;color:var(--green)}
+.trial{background:var(--green);color:#fff}.trial .title h2,.trial .title p{color:#fff}.trialbox{max-width:760px;margin:auto;text-align:center}
+.form{background:#fff;border-radius:20px;padding:25px;display:grid;gap:14px;color:var(--text);text-align:left}
+input,select,textarea{width:100%;padding:14px;border:1px solid #d8e1dc;border-radius:10px;font-size:15px}textarea{min-height:100px;resize:vertical}
+footer{background:#073d2f;color:#dceee7;padding:35px 20px}.foot{max-width:1100px;margin:auto;display:flex;justify-content:space-between;gap:25px;flex-wrap:wrap}.whatsapp{position:fixed;right:20px;bottom:20px;background:#19a974;color:#fff;padding:15px 19px;border-radius:999px;font-weight:800;box-shadow:0 10px 25px rgba(0,0,0,.2);z-index:30}
+.small{font-size:13px;color:#8eaaa1}
+
+.whatsapp-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:100;align-items:center;justify-content:center;padding:20px}.whatsapp-modal.show{display:flex}.wa-box{background:#fff;width:min(420px,100%);border-radius:22px;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.3);text-align:center}.wa-box h3{margin:0 0 8px;color:var(--green);font-size:24px}.wa-box p{margin:0 0 20px;color:#64756f}.wa-choice{display:block;width:100%;padding:15px 18px;margin:10px 0;border:0;border-radius:13px;font-size:16px;font-weight:700;cursor:pointer;text-align:left}.wa-pk{background:#e8f7ef;color:#075c43}.wa-my{background:#fff5d9;color:#6a4a00}.wa-close{background:#f1f3f2;color:#43534d}.wa-choice small{display:block;font-weight:400;margin-top:3px;opacity:.8}
+@media(max-width:800px){.hero-in{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.featuregrid{grid-template-columns:1fr 1fr}.navlinks{display:none}h1{font-size:38px}}
+@media(max-width:480px){.featuregrid{grid-template-columns:1fr}.hero{padding-top:40px}section{padding:50px 16px}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="navin">
+    <div class="logo">Fizaan <span>Seerat</span></div>
+    <div class="navlinks">
+      <a href="#courses">Courses</a><a href="#why">Why Us</a><a href="#trial">Free Trial</a>
+      <a class="btn btn-green" href="#" onclick="openWhatsAppChooser(event, 'trial')">WhatsApp</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-in">
+    <div>
+      <span class="badge">ONLINE QURAN ACADEMY</span>
+      <h1>Learn Quran with <span>Love & Faith</span></h1>
+      <p>Give your child the gift of Quran. Learn from home with qualified teachers through live one-to-one or small-group online classes.</p>
+      <div class="actions">
+        <a class="btn btn-green" href="#trial">Book Free Trial</a>
+        <a class="btn btn-gold" href="#" onclick="openWhatsAppChooser(event, 'info')">Chat on WhatsApp</a>
+      </div>
+      <p class="small">Admin: C.H. Babar • Pakistan: +92 305 6993717 • Malaysia: +60 16 3282630<br>Boys & girls classes • Flexible timings • Regular progress reports</p>
+    </div>
+    <div class="hero-card"><img src="academy-flyer.jpg" alt="Fizaan Seerat Online Quran Academy flyer"></div>
+  </div>
+</header>
+
+<section id="courses">
+<div class="wrap">
+  <div class="title"><h2>Our Courses</h2><p>Simple, structured and practical Quran learning for children and beginners.</p></div>
+  <div class="grid">
+    <div class="card"><div class="icon">📖</div><h3>Noorani Qaida</h3><p>For beginners who are starting their Quran learning journey.</p></div>
+    <div class="card"><div class="icon">🕌</div><h3>Nazra Quran</h3><p>Improve Quran reading with correct pronunciation and fluency.</p></div>
+    <div class="card"><div class="icon">🎙️</div><h3>Basic Tajweed</h3><p>Learn correct pronunciation and essential Tajweed rules.</p></div>
+    <div class="card"><div class="icon">🌙</div><h3>Seerat-un-Nabi ﷺ</h3><p>Learn about the life, character and teachings of Prophet Muhammad ﷺ.</p></div>
+    <div class="card"><div class="icon">👦</div><h3>Kids Classes</h3><p>Daily or weekly classes designed for children of different ages.</p></div>
+    <div class="card"><div class="icon">👨‍🏫</div><h3>One-to-One Classes</h3><p>Individual attention or small-group learning according to your needs.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="why" class="features">
+<div class="wrap">
+  <div class="title"><h2>Why Choose Us?</h2><p>Helping children build a strong connection with the Quran from home.</p></div>
+  <div class="featuregrid">
+    <div class="feature"><div style="font-size:30px">🏠</div><strong>Learn From Home</strong><span>Comfortable online learning</span></div>
+    <div class="feature"><div style="font-size:30px">👨‍🏫</div><strong>Qualified Teachers</strong><span>Dedicated teaching support</span></div>
+    <div class="feature"><div style="font-size:30px">🕐</div><strong>Flexible Timings</strong><span>Classes around your schedule</span></div>
+    <div class="feature"><div style="font-size:30px">📋</div><strong>Progress Reports</strong><span>Parents can track progress</span></div>
+  </div>
+</div>
+</section>
+
+<section>
+<div class="wrap">
+  <div class="title"><h2>For Boys & Girls</h2><p>Separate classes and dedicated staff can be arranged for boys and girls.</p></div>
+  <div class="grid">
+    <div class="card"><h3>👦 For Boys</h3><p>Male teacher available. Friendly and respectful learning environment.</p></div>
+    <div class="card"><h3>👧 For Girls</h3><p>Female teacher availability can be arranged for girls.</p></div>
+    <div class="card"><h3>💻 Live Online Classes</h3><p>Classes can be conducted through Zoom or Google Meet.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="trial" class="trial">
+<div class="trialbox">
+  <div class="title"><h2>Book Your FREE Trial Class</h2><p>Fill in the details and we will contact you on WhatsApp.</p></div>
+  <form class="form" onsubmit="sendWhatsApp(event)">
+    <input id="parent" required placeholder="Parent / Guardian Name">
+    <input id="child" required placeholder="Child's Name">
+    <input id="age" required type="number" min="3" max="80" placeholder="Child's Age">
+    <select id="course" required>
+      <option value="">Select a Course</option>
+      <option>Noorani Qaida</option><option>Nazra Quran</option><option>Basic Tajweed</option>
+      <option>Seerat-un-Nabi ﷺ</option><option>Kids Quran Classes</option>
+    </select>
+    <input id="time" placeholder="Preferred Class Time">
+    <button class="btn btn-green" type="submit">Request Free Trial on WhatsApp</button>
+  </form>
+</div>
+</section>
+
+<footer>
+<div class="foot">
+  <div><strong>Fizaan Seerat Online Quran Academy</strong><br><span class="small">Quran • Seerat • Better Tomorrow</span></div>
+  <div>Admin: <strong>C.H. Babar</strong><br>Pakistan: <strong>+92 305 6993717</strong><br>Malaysia: <strong>+60 16 3282630</strong><br><span class="small">For registration & free demo class</span></div>
+</div>
+</footer>
+
+<a class="whatsapp" href="#" onclick="openWhatsAppChooser(event, 'trial')">💬 WhatsApp</a>
+
+<div id="whatsappModal" class="whatsapp-modal" onclick="closeWhatsAppChooser(event)">
+  <div class="wa-box" onclick="event.stopPropagation()">
+    <h3>Choose WhatsApp</h3>
+    <p>Please choose the country you want to contact.</p>
+    <button class="wa-choice wa-pk" onclick="goWhatsApp('pk')">🇵🇰 Pakistan WhatsApp<small>+92 305 6993717</small></button>
+    <button class="wa-choice wa-my" onclick="goWhatsApp('my')">🇲🇾 Malaysia WhatsApp<small>+60 16 3282630</small></button>
+    <button class="wa-choice wa-close" onclick="closeWhatsAppChooser()">Cancel</button>
+  </div>
+</div>
+<script>
+let whatsappMessage='';
+function openWhatsAppChooser(e,type,msg){
+  if(e) e.preventDefault();
+  if(type==='trial') whatsappMessage='Assalam o Alaikum, I want to book a free Quran trial class.';
+  else if(type==='info') whatsappMessage='Assalam o Alaikum, I want more information about online Quran classes.';
+  else whatsappMessage=msg || 'Assalam o Alaikum, I want to know more about Quran classes.';
+  document.getElementById('whatsappModal').classList.add('show');
+}
+function closeWhatsAppChooser(e){
+  if(!e || e.target===document.getElementById('whatsappModal')) document.getElementById('whatsappModal').classList.remove('show');
+}
+function goWhatsApp(country){
+  const number=country==='pk'?'923056993717':'60163282630';
+  window.location.href='https://wa.me/'+number+'?text='+encodeURIComponent(whatsappMessage);
+}
+function sendWhatsApp(e){
+  e.preventDefault();
+  const p=document.getElementById('parent').value;
+  const c=document.getElementById('child').value;
+  const a=document.getElementById('age').value;
+  const course=document.getElementById('course').value;
+  const time=document.getElementById('time').value || 'Not specified';
+  const msg=`Assalam o Alaikum, I want to book a FREE trial class.%0A%0AParent: ${encodeURIComponent(p)}%0AChild: ${encodeURIComponent(c)}%0AAge: ${encodeURIComponent(a)}%0ACourse: ${encodeURIComponent(course)}%0APreferred time: ${encodeURIComponent(time)}`;
+  openWhatsAppChooser(null, 'custom', msg);
+}
+</script>
+</body>
+</html>
